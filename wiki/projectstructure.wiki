@@ -1,0 +1,23 @@
+#summary How to set up this project for development.
+#labels Featured
+
+= Project Structure =
+
+In order to ensure all developers are on the same page or if you are just getting the source code to compile this project with your Sitefinity website needs to be set up this this way:
+
+== Details ==
+
+  * root
+    * wwwroot
+    * src
+
+In order for your VisualSVN to work you need to have the solution file stored in root.  If you want to develop and the reference to work then in wwwroot you need to have the Sitefinity dlls in the bin folder at a minimum.  We recommend that you replace the wwwroot with an actual sitefinity project.  To use this with existing SVN projects we recommend that you use the SVN externals.
+
+== SVN Externals ==
+To integrate the web ui project into an existing project for development purposes you can use externals, this way you can be sure that the project compiles with the version you are developing with, if of course you aren't interested in this you can just download the pre-compiled dlls
+
+To add an SVN external if you are using TortoiseSVN you simply add an SVN property and choose svn:external from the dropdown and use the following:
+
+ZimWeb.Web.UI https://zimwebui.googlecode.com/svn/trunk/Src
+
+Then when you do and SVN Update it will download the latest stable code from trunk, you can alter the above if you want to work on a different branch.

@@ -1,0 +1,17 @@
+﻿div.ctrlProps div.ctrlContent div.ctrlContentImageColumn .CmsButLeft
+{
+	padding-left:25px;
+}
+
+div.ctrlProps div.ctrlContent div.ctrlContentImageColumn p
+{
+	margin:3px 0;
+}
+
+div.ctrlProps div.ctrlContent textarea.txt {
+	padding: 2px;
+	width: 270px;	
+	border: 1px solid #ccc;
+	float: left;
+}
+
